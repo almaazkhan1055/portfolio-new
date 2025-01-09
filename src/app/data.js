@@ -44,7 +44,7 @@ export const projectsData = [
   },
   {
     id: 7,
-    name: "MAKBYTE.IO",
+    name: "MAKBYTE",
     description: "React, Javascript, Redux, Tmdb API, Tailwind css",
     date: "2023-09-18",
     demoLink: "https://makbyte.io/",
@@ -69,6 +69,13 @@ export const projectsData = [
     description: "NEXT.js, CSS3",
     date: "2023-10-14",
     demoLink: "https://luxurytrd.com",
+  },
+  {
+    id: 11,
+    name: "LMS",
+    description: "NEXT.js, CSS3",
+    date: "2024-06-1",
+    demoLink: "https://lms-academind-svk4.vercel.app/",
   },
 ];
 
@@ -96,3 +103,37 @@ export const BtnList = [
     newTab: true,
   },
 ];
+
+export const aboutDetailsData = {
+  title: "Architect of Enchantment",
+  description: `My journey in web development is powered by an array of mystical
+    tools and languages, with JavaScript casting the core of my
+    enchantments. I wield frameworks like React.js and Next.js with
+    precision, crafting seamless portals (websites) that connect realms
+    (users) across the digital universe. The ancient arts of the
+    Jamstack empower me to create fast, secure, and dynamic experiences,
+    while my design skills ensure every creation is not only functional
+    but visually captivating. Join me as I continue to explore new
+    spells and technologies to shape the future of the web.`,
+  highlights: [
+    {
+      text: "Makbyte.io",
+      subtext: "current company",
+    },
+    {
+      text: "2.5",
+      subtext: "years of experience",
+    },
+  ],
+  skills: [
+    "../../images/react.webp",
+    "../../images/nextjs.webp",
+    "../../images/redux.webp",
+    "../../images/tailwind.webp",
+    "../../images/css.webp",
+    "../../images/firebase.webp",
+    "../../images/javascript.webp",
+    "../../images/github.webp",
+    "../../images/html.webp",
+  ],
+};
