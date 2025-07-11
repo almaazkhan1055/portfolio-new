@@ -2,7 +2,8 @@ export const projectsData = [
   {
     id: 12,
     name: "Optimist Dev",
-    description: "",
+    description:
+      "Nextjs, Tailwindcss, Redux, Stripe, Tailwind UI, Formik, Yup, Nodejs, Expressjs, MongoDB",
     date: "2025-01-01",
     demoLink: "https://optimist-dev-frontend.vercel.app/",
   },
