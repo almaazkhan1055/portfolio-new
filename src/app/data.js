@@ -1,12 +1,6 @@
+// import resume from "../../public/Almaaz_resume.pdf";
+
 export const projectsData = [
-  {
-    id: 12,
-    name: "Optimist Dev",
-    description:
-      "Nextjs, Tailwindcss, Redux, Stripe, Tailwind UI, Formik, Yup, Nodejs, Expressjs, MongoDB",
-    date: "2025-01-01",
-    demoLink: "https://optimist-dev-frontend.vercel.app/",
-  },
   {
     id: 1,
     name: "MOVIE-FLIXX",
@@ -106,7 +100,7 @@ export const BtnList = [
   },
   {
     label: "Resume",
-    link: "https://almaaz-resume.tiiny.site/",
+    link: "/Almaaz_resume.pdf",
     icon: "resume",
     newTab: true,
   },
