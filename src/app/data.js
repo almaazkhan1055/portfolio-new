@@ -79,6 +79,14 @@ export const projectsData = [
     date: "2024-06-1",
     demoLink: "https://lms-academind-svk4.vercel.app/",
   },
+   {
+    id: 12,
+    name: "Optimist Dev",
+    description:
+      "Nextjs, Tailwindcss, Redux, Stripe, Tailwind UI, Formik, Yup, Nodejs, Expressjs, MongoDB",
+    date: "2025-01-01",
+    demoLink: "https://optimist-dev-frontend.vercel.app/",
+  },
 ];
 
 export const BtnList = [
