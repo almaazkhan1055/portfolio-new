@@ -1,13 +1,5 @@
 export const projectsData = [
   {
-    id: 12,
-    name: "Optimist Dev",
-    description:
-      "Nextjs, Tailwindcss, Redux, Stripe, Tailwind UI, Formik, Yup, Nodejs, Expressjs, MongoDB",
-    date: "2025-01-01",
-    demoLink: "https://optimist-dev-frontend.vercel.app/",
-  },
-  {
     id: 1,
     name: "MOVIE-FLIXX",
     description: "React, Javascript, Redux, Tmdb API, Tailwind css",
@@ -84,6 +76,14 @@ export const projectsData = [
     description: "NEXT.js, CSS3",
     date: "2024-06-1",
     demoLink: "https://lms-academind-svk4.vercel.app/",
+  },
+   {
+    id: 12,
+    name: "Optimist Dev",
+    description:
+      "Nextjs, Tailwindcss, Redux, Stripe, Tailwind UI, Formik, Yup, Nodejs, Expressjs, MongoDB",
+    date: "2025-01-01",
+    demoLink: "https://optimist-dev-frontend.vercel.app/",
   },
 ];
 
