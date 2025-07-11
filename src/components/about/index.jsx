@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import ItemLayout from "./ItemLayout";
 import Image from "next/image";
 import react from "../../images/react.webp";
@@ -11,9 +12,12 @@ import javascript from "../../images/javascript.webp";
 import github from "../../images/github.webp";
 import html from "../../images/html.webp";
 
-const aboutDetailsData = {
-  title: "Architect of Enchantment",
-  description: `My journey in web development is powered by an array of mystical
+const AboutDetails = () => {
+  let totalExperience = getTotalExperience();
+
+  const aboutDetailsData = {
+    title: "Architect of Enchantment",
+    description: `My journey in web development is powered by an array of mystical
     tools and languages, with JavaScript casting the core of my
     enchantments. I wield frameworks like React.js and Next.js with
     precision, crafting seamless portals (websites) that connect realms
@@ -22,30 +26,44 @@ const aboutDetailsData = {
     while my design skills ensure every creation is not only functional
     but visually captivating. Join me as I continue to explore new
     spells and technologies to shape the future of the web.`,
-  highlights: [
-    {
-      text: "Makbyte.io",
-      subtext: "current company",
-    },
-    {
-      text: "2.5",
-      subtext: "years of experience",
-    },
-  ],
-  skills: [
-    react,
-    nextjs,
-    redux,
-    tailwind,
-    css,
-    firebase,
-    javascript,
-    github,
-    html,
-  ],
-};
+    highlights: [
+      {
+        text: "Makbyte.io",
+        subtext: "current company",
+      },
+      {
+        text: totalExperience,
+        subtext: "years of experience",
+      },
+    ],
+    skills: [
+      react,
+      nextjs,
+      redux,
+      tailwind,
+      css,
+      firebase,
+      javascript,
+      github,
+      html,
+    ],
+  };
 
-const AboutDetails = () => {
+  function getTotalExperience() {
+    const startDate = new Date("2022-08-01");
+    const todaysDate = new Date();
+    let years = todaysDate.getFullYear() - startDate.getFullYear();
+
+    let months = todaysDate.getMonth() - startDate.getMonth();
+    console.log(years, months);
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+    return `${years}.${months}`;
+  }
+
   return (
     <section className="py-20 w-full">
       <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full">
@@ -81,7 +99,6 @@ const AboutDetails = () => {
           className={"col-span-full flex items-center gap-10 justify-center"}
         >
           {aboutDetailsData.skills.map((skill, index) => {
-            console.log("skill", skill);
             return <Image key={index} width={72} src={skill} />;
           })}
         </ItemLayout>
